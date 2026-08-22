@@ -1,40 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
     <title>Controle de Gasto</title>
-</head>
-<body>
-    <header>
-        <h1>Controle de Gastos</h1>
-        <p>
-            
-            Fotografe o comprovante. A IA anota para você.
-            
-        </p>
-    </header>
-    <main>
-        <div>
-            <p>
-                Total Gasto
-            </p>
-            <h1>
-               
-                R$ 0,00
-                
-            </h1>
-            <p>
-               
-            </p>
-        </div>
+  </head>
+  <body>
 
-        <div class="caixa-foto">
-            <label for="comprovante">Anexar comprovante</label>
-            <input type="file" class="foto" id="comprovante" accept="image/*" onchange="lerFoto()">
-        </div>
+    <header class="cabecalho">
+      
+      <h1>
+        Controle de Gastos
+      </h1>
+      <p class="topo">
+        Fotografe o comprovante. A IA anota para você.
+      </p>
+
+    </header>
+
+    <main class="principal">
+
+      <div class="caixa-total">
+
+        <p>
+          Total Gasto
+        </p>
+        <h2 class="total-gasto">
+          R$ 0,00
+        </h2>
+        <p>
+          0 Comprovantes lidos
+        </p>
+
+      </div>
+
+      <!-- INPUT PARA SELECIONAR IMAGENS -->
+      <div class="caixa-foto">
+
+        <label>
+          🧾 Toque para fotografar o comprovante
+          <input onchange="lerFoto()" type="file" accept="image/*" />
+        </label>
+
+      </div>
 
     </main>
-</body>
+
+  </body>
 </html>

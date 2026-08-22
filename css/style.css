@@ -1,4 +1,56 @@
 *{
-    margin:0;
-    pading:0;
+  margin: 0;
+  padding:0;
 }
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* troca a fonte */
+  background-color: #d0e0f5; /* muda a cor de fundo */
+  color: #22304a; /*mudar cor do texto*/
+  max-width:520px; /* define a largura máxima */
+  margin: 0 auto; /* define a margem automática */
+  padding: 24px;  /* define o espaçamento interno */
+}
+
+.caixa-total {
+  background-color: #0f766e; /* define o espaçamento interno */
+  color: #ffffff; /* troca cor do texto */
+  padding: 24px; /* define o espaçamento interno */
+  text-align: center;  /* alinha texto ao centro */
+  border-radius: 18px; /* define o arredondamento das bordas */
+}
+
+.cabecalho h1 {
+  text-align: center;  /* alinha texto ao centro */
+}
+
+.topo {
+  color: #6b7a94; /* troca cor do texto */
+  text-align: center;  /* alinha texto ao centro */
+  margin: 16px; /* distância os itens */
+}
+
+.total-gasto {
+  font-size: 42px; /* Tamanho da fonte */
+  font-weight: bold; /* "Peso" da fonte / Negrito */
+  margin: 12px; /* distância os itens */
+}
+
+label {
+  background-color: #ffffff; /* troca cor de fundo */
+  border-radius: 16px; /* define o arredondamento das bordas */
+  padding: 28px; /* define o espaçamento interno */
+  text-align: center; /* alinha texto ao centro */
+  font-weight: bold; /* "Peso" da fonte / Negrito */
+  border: 4px dashed #c3cfe0; /* deixa a borda tracejada */
+  display: block; /* o item ocupe uma linha só dele */
+  margin: 16px; /* distância os itens */
+  cursor: pointer; /* muda o cursor do mouse - mãozinha */
+}
+
+input {
+  display: none; /* esconde o input */
+}
+
+
+
