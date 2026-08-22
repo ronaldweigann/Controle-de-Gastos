@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Controle de Gasto</title>
+</head>
+<body>
+    <header>
+        <h1>Controle de Gastos</h1>
+        <p>
+            
+            Fotografe o comprovante. A IA anota para você.
+            
+        </p>
+    </header>
+    <main>
+        <div>
+            <p>
+                Total Gasto
+            </p>
+            <h1>
+               
+                R$ 0,00
+                
+            </h1>
+            <p>
+               
+            </p>
+        </div>
+
+        <div class="caixa-foto">
+            <label for="comprovante">Anexar comprovante</label>
+            <input type="file" class="foto" id="comprovante" accept="image/*" onchange="lerFoto()">
+        </div>
+
+    </main>
+</body>
+</html>
