@@ -1,51 +1,46 @@
-<!doctype html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Controle de Gasto</title>
-  </head>
-  <body>
+<!DOCTYPE html> <!--VERSÃO DO HTML (MAIS MODERNA)-->
 
-    <header class="cabecalho">
-      
-      <h1>
-        Controle de Gastos
-      </h1>
-      <p class="topo">
-        Fotografe o comprovante. A IA anota para você.
-      </p>
+<html lang="pt-br"> <!-- FICA TODO O SITE -->
 
-    </header>
+<head> <!-- CABEÇA - CONFIGURAÇÕES -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://js.puter.com/v2/"></script>
+    <title>GASTO DA FOTO</title>
+</head>
 
-    <main class="principal">
+<body> <!-- TODA A PARTE VISÍVEL -->
 
-      <div class="caixa-total">
+    <div>
 
-        <p>
-          Total Gasto
-        </p>
-        <h2 class="total-gasto">
-          R$ 0,00
-        </h2>
-        <p>
-          0 Comprovantes lidos
-        </p>
+        <h1>📸 Gasto na Foto</h1>
+        <p class="topo">Fotografe o comprovante. A IA anota pra você.</p>
 
-      </div>
+    </div>
 
-      <!-- INPUT PARA SELECIONAR IMAGENS -->
-      <div class="caixa-foto">
+    <div class="caixa-total">
 
-        <label>
-          🧾 Toque para fotografar o comprovante
-          <input onchange="lerFoto()" type="file" accept="image/*" />
-        </label>
+        <p>Total gasto</p>
+        <h2 class="total-gasto">R$ 0,00</h2>
+        
+    </div>
 
-      </div>
+    <!-- INPUT PARA SELECIONAR IMAGENS -->
 
-    </main>
+    <!-- label -  -->
+    <!-- change - mudar -->
+    <label>
+        🧾 Toque para fotografar o comprovante
+        <input class="foto" onchange="lerFoto()" type="file" accept="image/*">
+    </label>
 
-  </body>
+    <div class="lista">
+
+    </div>
+
+</body>
+
+<script src="scripts.js"></script>
+
 </html>
