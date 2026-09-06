@@ -1,11 +1,12 @@
-💰 Controle de Gastos
-
-Uma aplicação web criada para tornar o registro de gastos mais simples, rápido e prático.
-
 <div align="center">
 
+<img src="./assets/banner.png" width="100%">
 
+# 💰 Controle de Gastos
 
+**Uma forma simples e rápida de organizar seus gastos através de comprovantes.**
+
+[🌐 Acessar projeto](https://controle-de-gastos-orpin.vercel.app/)
 
 </div>
 
