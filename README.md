@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.png" width="100%">
+<img src="./assets/preview.png" width="100%">
 
 # 💰 Controle de Gastos
 
