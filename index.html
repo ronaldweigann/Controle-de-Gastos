@@ -9,13 +9,13 @@
     <script src="https://js.puter.com/v2/"></script>
     <title>GASTO DA FOTO</title>
 </head>
-
+ 
 <body> <!-- TODA A PARTE VISÍVEL -->
 
-    <div>
+    <div class="titulo">
 
-        <h1>📸 Gasto na Foto</h1>
-        <p class="topo">Fotografe o comprovante. A IA anota pra você.</p>
+        <h1>Controle de Gasto</h1>
+        <p class="topo">Insira a imagem do comprovante. A IA anota pra você.</p>
 
     </div>
 
@@ -30,14 +30,25 @@
 
     <!-- label -  -->
     <!-- change - mudar -->
-    <label>
-        🧾 Toque para fotografar o comprovante
+    <label class="anexo">
+        🧾 Anexar comprovante
         <input class="foto" onchange="lerFoto()" type="file" accept="image/*">
     </label>
 
     <div class="lista">
+    <label class="telefone" for="telefone">Seu Contato:</label>
 
-    </div>
+    <input 
+        type="tel" 
+        id="telefone" 
+        class="input-telefone"
+        placeholder="(67) 99999-9999"
+    >
+
+    <button class="envioTelefone" onclick="enviarWhatsApp()">
+        Enviar para o WhatsApp
+    </button>
+</div>
 
 </body>
 

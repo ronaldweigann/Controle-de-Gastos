@@ -6,15 +6,19 @@
 
 body {
    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* troca a fonte */
-   background-color: #f2f5f9;  /* muda a cor de fundo */
-   color: #22304a;  /* muda a cor do texto */
+   background-color: #2d3052;  /* muda a cor de fundo */
    max-width: 520px;  /* define a largura máxima */
    margin: 0 auto;  /* define a margem automática */
    padding: 24px;  /* define o espaçamento interno */
 }
 
+body > .titulo {
+    color: color: #c6cfde;  /* muda a cor do texto */
+}
+
 .caixa-total {
-    background-color: #0f766e;   /* troca cor de fundo */
+    background-color: #410f76;   /* troca cor de fundo */
+    box-shadow: 0 0 15px #8000ff;
     color: #ffffff;  /* troca cor do texto */
     padding: 24px;  /* define o espaçamento interno */
     text-align: center;  /* centraliza o texto */
@@ -37,21 +41,108 @@ h1 {
     margin: 12px;  /* distância os itens */
 }
 
-label {
+.anexo {
     background-color: #ffffff;  /* troca cor de fundo */
+    color: #22304a;  /* muda a cor do texto */
     border-radius: 16px;  /* define o arredondamento das bordas */
+    box-shadow: 0 0 7px #8000ff;
     padding: 28px;  /* define o espaçamento interno */
     text-align: center;  /* alinha texto ao centro */
     font-weight: bold;  /* "Peso" da fonte / Negrito */
-    border: 4px dashed #c3cfe0;
+    border: 4px dashed #410f76;
     display: block;  /* o item ocupe uma linha só dele */
     margin: 16px;  /* distância os itens */
     cursor: pointer;  /* muda o cursor do mouse - mãozinha */
 }
 
-input {
+.anexo .foto {
     display: none;  /* esconde o input */
 }
+
+.lista {
+    width: 100%;
+    max-width: 450px;
+    margin: 15px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Texto "Seu Contato" */
+.telefone {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Campo de telefone */
+.input-telefone {
+    width: 100%;
+    max-width: 400px;
+    height: 55px;
+
+    padding: 0 18px;
+    box-sizing: border-box;
+
+    border: 2px solid #6a00c9;
+    border-radius: 12px;
+
+    background-color: #ffffff;
+    color: #222;
+
+    font-size: 16px;
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-telefone::placeholder {
+    color: #888;
+}
+
+/* Efeito quando clicar no campo */
+.input-telefone:focus {
+    border-color: #9b30ff;
+    box-shadow: 0 0 10px rgba(155, 48, 255, 0.5);
+}
+
+/* Botão */
+.envioTelefone {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #6a00c9;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+.envioTelefone:hover {
+    background: #8400ff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(132, 0, 255, 0.4);
+}
+
+/* Efeito ao clicar */
+.envioTelefone:active {
+    transform: translateY(0);
+}
+
+
+
 
 .comprovante {
   background-color: #ffffff;
